@@ -9,5 +9,7 @@ namespace TiendaDeRopa.Servicios
     internal interface MenuInterfaz
     {
         public void nombreEmpresa();
+
+        public int mostrarMenu();
     }
 }

@@ -12,11 +12,36 @@ namespace TiendaDeRopa
             mi.nombreEmpresa();
 
             bool cerrarMenu = false;
-            int opselec;
+            int opSelec;
 
-            while(opselec) 
+            while(!cerrarMenu) 
             { 
-                opselec = mi.mostrarMenu();
+                opSelec = mi.mostrarMenu();
+
+                Console.WriteLine(opSelec);
+
+                switch (opSelec)
+                {
+                    case 0:
+                        Console.WriteLine("hola");
+                        cerrarMenu=true;
+                        break;
+                      
+                    case 1:
+                        break;
+
+                    case 2:
+                        break;
+
+                    case 3:
+                        break;
+
+                    case 4:
+                        break;
+
+                    case 5:
+                        break;
+                }
             }
         }
     }
