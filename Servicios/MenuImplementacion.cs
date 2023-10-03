@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace TiendaDeRopa.Servicios
 {
+    /// <summary>
+    /// implementacion del as acciones del menu 
+    /// 031023 - sav
+    /// </summary>
     internal class MenuImplementacion : MenuInterfaz
-    {
+    {   
         public void nombreEmpresa() 
         {
-            string mensaje = "CLIPER";
+            string mensaje = "BIENVENIDO A LA TIENDA CLIPER";
 
             Console.WriteLine(mensaje);
         }
@@ -27,6 +31,7 @@ namespace TiendaDeRopa.Servicios
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("Seleccione una opción: ");
 
+            //esta linea de comando solo recoge el primer caracter introducido 
             opIntro = Console.ReadKey(true).KeyChar - ('0');
 
             return opIntro;
